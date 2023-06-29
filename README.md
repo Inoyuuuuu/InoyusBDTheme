@@ -1,2 +1,2 @@
-# Okayu_BDtheme
-Okayu theme for BD
+# Inoyu's Theme
+my theme for BD

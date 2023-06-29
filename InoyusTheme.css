@@ -1,0 +1,147 @@
+/**
+ * @name Inoyu's Theme
+ * @author Inoyu
+ * @description a newer and cleaner theme for BetterDiscord (code for transparency was inspired ShadowDevilsAvenged's New Kemono Friends Theme)
+ * @version 6
+ * @source https://raw.githubusercontent.com/Inoyuuuuu/Okayu_BDtheme/main/OkayuTheme.css?token=AQDK3J3WWBWQZZKVA5K4XI3AP4KL2
+ * @updateUrl https://raw.githubusercontent.com/Inoyuuuuu/Okayu_BDtheme/main/OkayuTheme.css?token=AQDK3J3WWBWQZZKVA5K4XI3AP4KL2
+ */
+ @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+ body, div, span, textarea, ::-webkit-input-placeholder {
+     font-family: 'Roboto', sans-serif;
+ }
+
+ :root {
+    --backgroundImage: url(https://images.hdqwalls.com/download/punishing-gray-raven-5k-he-1920x1080.jpg);
+    --userAvatarSize: 40px;
+    --activitySymbolSize: 54px;
+    --transparentBackgrounds: transparent;
+    --whiteColor: #ffffff;
+
+    --highlyTransparentMainColor: rgba(0, 0, 0, 0.25);
+    --medTransparentMainColor: rgba(174, 232, 236, 0.267);
+    --lowTransparentMainColor: rgba(25, 68, 88, 0.75);
+
+    --mainColor: rgba(82, 153, 175, 0.466);
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* app main background */
+.app-2CXKsg {
+    background-image: var(--backgroundImage);
+    background-size: cover;
+    background-color: var(--transparentBackgrounds);
+}
+
+.root-2s1-ri>* {
+    background-color: var(--transparentBackgrounds);
+}
+
+/* shade background */
+.layers-1YQhyW {
+    background-color: var(--medTransparentMainColor);
+}
+
+/* general transparency */
+.container-ZMc96U.themed-Hp1KC_, .contentRegion-3HkfJJ, .sidebarRegionScroller-FXiQOh, 
+.nowPlayingColumn-1eCBCN,.bg-1QIAus,
+.theme-dark .container-1NXEtd, .theme-dark .scroller-3X7KbA, .contentRegionScroller-2_GT_N,
+.standardSidebarView-E9Pc3j, .layer-86YKbF, .privateChannels-oVe7HL,
+.theme-dark .scroller-WSmht3, .theme-dark .container-2cd8Mz, .container-1oAagU {
+    background: var(--transparentBackgrounds) !important;
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* chat style*/
+
+.chatContent-3KubbW, .chat-2ZfjoI {
+    background: var(--transparentBackgrounds) !important;
+}
+
+
+/* ---------------------------------------------------------------------- */
+
+/* members list on the right */
+
+.container-2o3qEW,.members-3WRCEx, .members-3WRCEx>div {
+    background: var(--highlyTransparentMainColor) !important;
+}
+.member-48YF_l, 
+.members-3WRCEx {
+    background-color: var(--mainColor);
+}
+
+
+
+/* ---------------------------------------------------------------------- */
+
+/* channel list on the left */
+.sidebar-1tnWFu {
+    background: var(--medTransparentMainColor) !important;
+}
+
+
+/* ---------------------------------------------------------------------- */
+
+/* server list left*/
+.wrapper-1_HaEi {
+    background-color: var(--transparentBackgrounds);
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* bottom left user area */
+
+.panels-3wFtMD {
+    background-color: rgba(0,0,0,.5);
+}
+
+.theme-dark .container-YkUktl {
+        width: 250px;
+        height: 60px;
+        mask: none;
+        background-color: transparent;
+        
+}
+
+div.wrapper-3Un6-K.avatar-1EWyVD {
+    width: var(--userAvatarSize) !important;
+    height: var(--userAvatarSize) !important;
+}
+
+
+.container-YkUktl .avatar-1EWyVD foreignObject {
+    mask: none;
+    x: 5px !important;
+    y: 5px !important;
+}
+
+.container-YkUktl .avatar-1EWyVD .avatar-31d8He {
+    mask: none;
+    border-radius: 2px;
+}
+
+.container-YkUktl .avatar-1EWyVD foreignObject .avatarStack-3Bjmsl img {
+    -ms-interpolation-mode:nearest-neighbor;
+    image-rendering:crisp-edges;
+}
+
+.container-YkUktl .avatar-1EWyVD rect {
+    mask: none;
+    height: 20px;
+    width: 5px;
+    x: 19px;
+    y: 0px;
+}
+
+/* [[DOESNT WORK]] tried to change mask of activity logo (e.g. idle) */
+.container-YkUktl .avatar-1EWyVD .mask-1y0tyc.svg-1G_H_8 svg mask#rb {
+    x: 0px !important;
+    y: 0px !important;
+    height: 200px !important;
+    width: 200px !important;
+}
