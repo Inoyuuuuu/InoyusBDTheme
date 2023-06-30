@@ -1,15 +1,17 @@
 /**
  * @name Inoyu's Theme
  * @author Inoyu
- * @description a newer and cleaner theme for BetterDiscord (code for transparency was partly inspired by ShadowDevilsAvenged's New Kemono Friends Theme)
+ * @description a newer and cleaner theme for BetterDiscord (code for transparency was inspired ShadowDevilsAvenged's New Kemono Friends Theme)
  * @version 6
  * @source https://github.com/Inoyuuuuu/InoyusBDTheme/edit/main/InoyusTheme.css
  */
  @import url('https://fonts.googleapis.com/css?family=Roboto');
+ @import url('https://fonts.googleapis.com/css?family=Roboto-Serif');
+
 
 
  body, div, span, textarea, ::-webkit-input-placeholder {
-     font-family: 'Roboto', sans-serif;
+     font-family: 'Roboto', 'Roboto-Serif';
  }
 
  :root {
@@ -18,6 +20,9 @@
     --activitySymbolSize: 54px;
     --transparentBackgrounds: transparent;
     --whiteColor: #ffffff;
+
+    --chatFontColor: rgba(44, 44, 44, 0.882);
+    --chatFontBorderColor: rgba(29, 44, 46, 0.382);
 
     --highlyTransparentMainColor: rgba(0, 0, 0, 0.25);
     --medTransparentMainColor: rgba(174, 232, 236, 0.267);
@@ -55,12 +60,16 @@
 
 /* ---------------------------------------------------------------------- */
 
-/* chat style*/
+/* main server-chat style*/
 
 .chatContent-3KubbW, .chat-2ZfjoI {
     background: var(--transparentBackgrounds) !important;
 }
 
+.messageContent-2t3eCI {
+    color: var(--chatFontColor);
+    -webkit-text-stroke: 1px var(--chatFontBorderColor);
+}
 
 /* ---------------------------------------------------------------------- */
 
@@ -133,7 +142,7 @@ div.wrapper-3Un6-K.avatar-1EWyVD {
     mask: none;
     height: 20px;
     width: 5px;
-    x: 19px;
+    x: 21px;
     y: 0px;
 }
 
