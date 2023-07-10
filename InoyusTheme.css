@@ -140,10 +140,10 @@ div.wrapper-3Un6-K.avatar-1EWyVD {
 
 .container-YkUktl .avatar-1EWyVD rect {
     mask: none;
-    height: 20px;
-    width: 5px;
-    x: 21px;
-    y: 0px;
+    height: 27px !important;
+    width: 6px !important;
+    x: 21px !important;
+    y: 0px !important;
 }
 
 /* [[DOESNT WORK]] tried to change mask of activity logo (e.g. idle) */
