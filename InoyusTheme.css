@@ -19,16 +19,17 @@
     --userAvatarSize: 40px;
     --activitySymbolSize: 54px;
     --transparentBackgrounds: transparent;
-    --whiteColor: #ffffff;
 
-    --chatFontColor: rgba(44, 44, 44, 0.882);
-    --chatFontBorderColor: rgba(29, 44, 46, 0.382);
+    --chatFontColor: rgb(209, 240, 255);
 
     --highlyTransparentMainColor: rgba(0, 0, 0, 0.25);
-    --medTransparentMainColor: rgba(174, 232, 236, 0.267);
+    --medTransparentMainColor: rgba(58, 116, 121, 0.267);
     --lowTransparentMainColor: rgba(25, 68, 88, 0.75);
 
     --mainColor: rgba(82, 153, 175, 0.466);
+
+    /* not active */
+    --chatFontBorderColor: rgba(29, 44, 46, 0.382);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -68,7 +69,7 @@
 
 .messageContent-2t3eCI {
     color: var(--chatFontColor);
-    -webkit-text-stroke: 1px var(--chatFontBorderColor);
+    /*-webkit-text-stroke: 1px var(--chatFontBorderColor); */
 }
 
 /* ---------------------------------------------------------------------- */
